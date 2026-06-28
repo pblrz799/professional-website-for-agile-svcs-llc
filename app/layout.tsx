@@ -1,43 +1,38 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter, Geist_Mono } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
+const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
 })
 
+const description =
+  'Agile Svcs is a general contractor specializing in commercial and light industrial projects across the Southeast. From Class A office buildouts to healthcare expansions, we deliver on schedule, on budget, and finished right.'
+
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Agile Svcs — Commercial General Contractor | Southeast US',
+  description,
   generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  openGraph: {
+    title: 'Agile Svcs — Commercial General Contractor | Southeast US',
+    description,
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Agile Svcs LLC',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Agile Svcs — Commercial General Contractor | Southeast US',
+    description,
   },
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#0A2540',
 }
 
 export default function RootLayout({
@@ -46,7 +41,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html
+      lang="en"
+      className={`light ${inter.variable} ${geistMono.variable} bg-background`}
+    >
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
