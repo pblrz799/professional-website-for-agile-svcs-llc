@@ -49,10 +49,10 @@ export function SiteFooter() {
             <li className="flex items-center gap-2.5">
               <Phone className="size-4 shrink-0 text-accent" />
               <a
-                href="tel:+17863105070"
+                href="tel:+18336389259"
                 className="transition-colors hover:text-accent"
               >
-                (786) 310-5070
+                (833) 638-9259
               </a>
             </li>
             <li className="flex items-center gap-2.5">
