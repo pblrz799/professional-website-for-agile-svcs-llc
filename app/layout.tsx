@@ -15,7 +15,6 @@ const description =
 export const metadata: Metadata = {
   title: 'Agile Svcs — Commercial General Contractor | Southeast US',
   description,
-  generator: 'v0.app',
   openGraph: {
     title: 'Agile Svcs — Commercial General Contractor | Southeast US',
     description,
