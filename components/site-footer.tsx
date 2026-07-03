@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail } from 'lucide-react'
+
 const quickLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Sectors', href: '#sectors' },
@@ -6,6 +7,7 @@ const quickLinks = [
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
+
 export function SiteFooter() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -27,7 +29,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3">
             {quickLinks.map((link) => (
               <li key={link.href}>
-                
+                <a
                   href={link.href}
                   className="text-primary-foreground/85 transition-colors hover:text-accent"
                 >
@@ -48,7 +50,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-2.5">
               <Phone className="size-4 shrink-0 text-accent" />
-              
+              <a
                 href="tel:+18336389259"
                 className="transition-colors hover:text-accent"
               >
@@ -57,7 +59,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-2.5">
               <Mail className="size-4 shrink-0 text-accent" />
-              
+              <a
                 href="mailto:info@agileservices.us"
                 className="transition-colors hover:text-accent"
               >
@@ -69,8 +71,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-primary-foreground/10">
         <p className="mx-auto max-w-7xl px-6 py-6 text-center text-sm text-primary-foreground/60">
-          © 2024 Agile Svcs LLC. Licensed General Contractor. All rights
-          reserved.
+          &copy; 2024 Agile Svcs LLC. Licensed General Contractor. All rights reserved.
         </p>
       </div>
     </footer>
