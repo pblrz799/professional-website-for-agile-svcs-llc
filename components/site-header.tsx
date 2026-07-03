@@ -16,7 +16,7 @@ export function SiteHeader() {
         
           href="#top"
           className="flex items-center"
-          aria-label="Agile Services, LLC — Home"
+          aria-label="Agile Services, LLC - Home"
         >
           <img
             src="/agile-logo.svg"
