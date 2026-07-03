@@ -1,5 +1,4 @@
 import { MapPin, Phone, Mail } from 'lucide-react'
-
 const quickLinks = [
   { label: 'Services', href: '#services' },
   { label: 'Sectors', href: '#sectors' },
@@ -7,18 +6,20 @@ const quickLinks = [
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
-
 export function SiteFooter() {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-3">
         <div>
-          <p className="text-lg font-semibold tracking-tight">AGILE SVCS</p>
-          <p className="mt-3 max-w-xs leading-relaxed text-primary-foreground/70">
+          <img
+            src="/agile-logo-white.svg"
+            alt="Agile Services, LLC"
+            className="h-12 w-auto"
+          />
+          <p className="mt-4 max-w-xs leading-relaxed text-primary-foreground/70">
             Commercial Construction. Class A Delivery. Since 2020.
           </p>
         </div>
-
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-primary-foreground/60">
             Quick Links
@@ -26,7 +27,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3">
             {quickLinks.map((link) => (
               <li key={link.href}>
-                <a
+                
                   href={link.href}
                   className="text-primary-foreground/85 transition-colors hover:text-accent"
                 >
@@ -36,7 +37,6 @@ export function SiteFooter() {
             ))}
           </ul>
         </div>
-
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-primary-foreground/60">
             Contact
@@ -48,7 +48,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-2.5">
               <Phone className="size-4 shrink-0 text-accent" />
-              <a
+              
                 href="tel:+18336389259"
                 className="transition-colors hover:text-accent"
               >
@@ -57,7 +57,7 @@ export function SiteFooter() {
             </li>
             <li className="flex items-center gap-2.5">
               <Mail className="size-4 shrink-0 text-accent" />
-              <a
+              
                 href="mailto:info@agileservices.us"
                 className="transition-colors hover:text-accent"
               >
@@ -67,7 +67,6 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-
       <div className="border-t border-primary-foreground/10">
         <p className="mx-auto max-w-7xl px-6 py-6 text-center text-sm text-primary-foreground/60">
           © 2024 Agile Svcs LLC. Licensed General Contractor. All rights
