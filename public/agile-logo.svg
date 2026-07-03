@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" role="img" aria-label="Agile Services, LLC">
+  <title>Agile Services, LLC</title>
+
+  <!-- ============================================
+       ISOTIPO: cuadrado con 4 cuadrantes (mantenemos
+       la idea del logo original pero en paleta del site)
+       ============================================ -->
+
+  <!-- Cuadrante superior izquierdo: navy sólido -->
+  <path d="M 20 12
+           Q 12 12 12 20
+           L 12 60
+           L 62 60
+           L 62 12
+           Z"
+        fill="#0A2540"/>
+
+  <!-- Cuadrante superior derecho: champagne sólido -->
+  <path d="M 62 12
+           L 104 12
+           Q 112 12 112 20
+           L 112 60
+           L 62 60
+           Z"
+        fill="#B8956A"/>
+
+  <!-- Cuadrante inferior izquierdo: navy con opacidad -->
+  <path d="M 12 60
+           L 62 60
+           L 62 112
+           L 20 112
+           Q 12 112 12 104
+           Z"
+        fill="#0A2540"
+        fill-opacity="0.55"/>
+
+  <!-- Cuadrante inferior derecho: champagne con opacidad -->
+  <path d="M 62 60
+           L 112 60
+           L 112 104
+           Q 112 112 104 112
+           L 62 112
+           Z"
+        fill="#B8956A"
+        fill-opacity="0.55"/>
+
+  <!-- Línea divisoria vertical (blanca sutil) -->
+  <line x1="62" y1="12" x2="62" y2="112"
+        stroke="white"
+        stroke-width="3"/>
+
+  <!-- Línea divisoria horizontal (blanca sutil) -->
+  <line x1="12" y1="62" x2="112" y2="62"
+        stroke="white"
+        stroke-width="3"/>
+
+  <!-- ============================================
+       WORDMARK: "Agile" en navy semibold
+       ============================================ -->
+  <text x="138" y="76"
+        font-family="'Inter', 'Helvetica Neue', 'Arial', sans-serif"
+        font-size="58"
+        font-weight="600"
+        fill="#0A2540"
+        letter-spacing="-1.5">Agile</text>
+
+  <!-- Línea divisoria fina bajo "Agile" -->
+  <line x1="138" y1="90" x2="326" y2="90"
+        stroke="#0A2540"
+        stroke-width="1.5"
+        stroke-linecap="round"/>
+
+  <!-- ============================================
+       SUBTÍTULO: "SERVICES, LLC" en champagne
+       ============================================ -->
+  <text x="138" y="116"
+        font-family="'Inter', 'Helvetica Neue', 'Arial', sans-serif"
+        font-size="17"
+        font-weight="600"
+        fill="#B8956A"
+        letter-spacing="4.5">SERVICES, LLC</text>
+</svg>
